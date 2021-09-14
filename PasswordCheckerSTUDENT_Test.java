@@ -19,11 +19,11 @@ import org.junit.jupiter.api.function.Executable;
 
 public class PasswordCheckerSTUDENT_Test {
 	ArrayList<String> passwords;
-	String tooShort = "&uwU5";
-	String noUpper = "fa1lur#";
-	String noLower = "4WFU|S";
-	String noSequence = "WWWd0T%";
-	String noDigit = "numBER^S";
+	String tooShort = "!qWe4";
+	String noUpper = "sa4daw$";
+	String noLower = "3WER%F";
+	String noSequence = "DDDe4E$";
+	String noDigit = "frtGBV$R";
 	String weak = "1!Qwe";
 	String successful = "Succ3$Sful";
 	
@@ -164,11 +164,11 @@ public class PasswordCheckerSTUDENT_Test {
 	public void testInvalidPasswords() {
 		ArrayList<String> invalids;
 		invalids = PasswordCheckerUtility.getInvalidPasswords(passwords);
-		assertEquals(invalids.get(0), "&uwU5 -> The password must be at least 6 characters long");
-		assertEquals(invalids.get(1), "fa1lur# -> The password must contain at least one uppercase alphabetic character");
-		assertEquals(invalids.get(2), "4WFU|S -> The password must contain at least one lower case alphabetic character");
-		assertEquals(invalids.get(3), "WWWd0T% -> The password must contain at least one special character");
-		assertEquals(invalids.get(4), "numBER^S -> The password must contain at least one digit"); 
+		assertEquals(invalids.get(0), "!qWe4 -> The password must be at least 6 characters long");
+		assertEquals(invalids.get(1), "sa4daw$ -> The password must contain at least one uppercase alphabetic character");
+		assertEquals(invalids.get(2), "3WER%F -> The password must contain at least one lower case alphabetic character");
+		assertEquals(invalids.get(3), "DDDe4E$ -> The password must contain at least one special character");
+		assertEquals(invalids.get(4), "frtGBV$R -> The password must contain at least one digit"); 
 	}
 	
 }
